@@ -102,7 +102,7 @@ with tab1:
             shap_data.append({"Attribute": stat_name, "Impact (€M)": player_data[c] / 1_000_000})
             
     shap_df_ui = pd.DataFrame(shap_data).sort_values(by="Impact (€M)", ascending=False)
-    st.bar_chart(shap_df_ui.set_index("Attribute"))
+    st.bar_chart(shap_df_ui, x="Attribute", y="Impact (€M)")
 
 # TAB 2: Bonus Feature 1 - "Find similar players at lower cost"
 with tab2:
