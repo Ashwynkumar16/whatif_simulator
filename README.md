@@ -106,8 +106,8 @@ The application will automatically launch in your default web browser at http://
 If provided with enterprise-grade data APIs (such as Opta, Capology, or premium Transfermarkt access) and historical depth, the system architecture would be expanded in three key ways:
 
 - **Time-Series Depreciation Models**: Instead of a static snapshot, I would ingest 5+ years of historical market values to build a time-series model (e.g., LSTM or advanced XGBoost with temporal lags). This would allow the app to plot a 5-year forecasted trajectory graph of a player's value based on historical aging curves.
-- **Medical Contextualization:** I would integrate a Days_Injured_Last_3_Years matrix. The model would learn how different injury types (e.g., muscular vs. ligament) mathematically depreciate a player's value and build a "Risk Premium" into the final price output.
-- **Contract Leverage Dynamics**: I would ingest exact contract lengths (Months_To_Expiry) to algorithmically discount the Fair Market Value as a player approaches free agency, accurately simulating real-world transfer window pressures.
+- **Medical Contextualization:** I would integrate a `Days_Injured_Last_3_Years` matrix. The model would learn how different injury types (e.g., muscular vs. ligament) mathematically depreciate a player's value and build a "Risk Premium" into the final price output.
+- **Contract Leverage Dynamics**: I would ingest exact contract lengths (`Months_To_Expiry`) to algorithmically discount the Fair Market Value as a player approaches free agency, accurately simulating real-world transfer window pressures.
 ---
 
 **Author**: Ashwyn Kumar
