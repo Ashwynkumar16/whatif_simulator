@@ -1,4 +1,4 @@
-# Market Intelligence & Valuation Simulator
+# What If Simulator: Market Intelligence & Valuation 
 
 ## OVERVIEW
 This repository contains a full-stack, end-to-end Market Intelligence Simulator developed for the SoccerSolver Technical Challenge. Designed for Sporting Directors and recruitment teams, the platform empowers decision-makers to conduct real-time, data-driven "what-if" analyses on elite football players. By combining web scraping, fuzzy string matching, machine learning, and a highly responsive Streamlit frontend, this application evaluates how discrete changes in behavioral and physical attributes mathematically impact a player's true transfer market value.
