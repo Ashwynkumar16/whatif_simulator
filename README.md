@@ -100,6 +100,14 @@ The application will automatically launch in your default web browser at http://
 - **The String Matching Problem**: Merging Transfermarkt ("Vinicius Junior") with SoFIFA ("Vinícius Jr.") natively resulted in **massive** data loss. This was solved by implementing the RapidFuzz library to calculate the Levenshtein distance between names, ensuring high-fidelity data merges.
 - **Data Scoping (Missing Features)**: During Phase 1, a deliberate scoping decision was made to exclude Injury History and Contract Expiry. Standard accessible datasets do not track historical medical records natively. Attempting to scrape deeply nested, historical medical tables for hundreds of players introduced an extreme risk of IP-blocking. Consequently, the MVP was constrained to serve strictly as a "Pure Attribute Valuation" baseline.
 
+## Possible Improvements
+**What would I do with 10x more data?**
+
+If provided with enterprise-grade data APIs (such as Opta, Capology, or premium Transfermarkt access) and historical depth, the system architecture would be expanded in three key ways:
+
+- **Time-Series Depreciation Models**: Instead of a static snapshot, I would ingest 5+ years of historical market values to build a time-series model (e.g., LSTM or advanced XGBoost with temporal lags). This would allow the app to plot a 5-year forecasted trajectory graph of a player's value based on historical aging curves.
+- **Medical Contextualization:** I would integrate a Days_Injured_Last_3_Years matrix. The model would learn how different injury types (e.g., muscular vs. ligament) mathematically depreciate a player's value and build a "Risk Premium" into the final price output.
+- **Contract Leverage Dynamics**: I would ingest exact contract lengths (Months_To_Expiry) to algorithmically discount the Fair Market Value as a player approaches free agency, accurately simulating real-world transfer window pressures.
 ---
 
 **Author**: Ashwyn Kumar
