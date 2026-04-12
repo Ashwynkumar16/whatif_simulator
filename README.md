@@ -83,6 +83,8 @@ To ensure perfect reproducibility, all external dependencies have been pinned.
     ```
     python -m streamlit run app/app.py
     ```
+5. **Stopping the Program**:
+    Press Ctrl + C or Cmd + C in the terminal
 
 The application will automatically launch in your default web browser at http://localhost:8501.
 
