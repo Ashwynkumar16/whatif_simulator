@@ -70,11 +70,11 @@ To ensure perfect reproducibility, all external dependencies have been pinned.
     git clone https://github.com/Ashwynkumar16/whatif_simulator.git
     cd whatif_simulator
     ```
-2. **Install Dependencies: **
+2. **Install Dependencies:**
     ```
     pip install -r requirements.txt
     ```
-3. **Install browser binaries (Required for the Playwright web scraper):*
+3. **Install browser binaries (Required for the Playwright web scraper):**
     (Note: Using python -m ensures the command executes cleanly regardless of system PATH configurations).
     ```
     python -m playwright install
