@@ -63,6 +63,12 @@ The pipeline is divided into an offline training environment and a live producti
 ## Installation and Setup
 To ensure perfect reproducibility, all external dependencies have been pinned.
 
+### Live Demo on Streamlit
+Click the following link to test the live version on streamlit
+
+https://whatifsimulator.streamlit.app/
+
+### Local Setup
 **Prerequisites**: Ensure you have Python 3.9+ installed.
 
 1. **Clone the repository:**
